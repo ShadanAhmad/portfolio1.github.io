@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stl.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mouseover.css">
+    <link rel="stylesheet" href="bubble.css">
+    <link rel="stylesheet" href="mouse.css">
+    
+
+
+     <!-- =====BOX ICONS===== -->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+
+
+    <!-- cursor effect -->
+    <div class="cursor"></div>
+   <!-- cursor js -->
+<script type="text/javascript">
+    const cursor=document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e)=>{
+        let x=e.pageX;
+        let y=e.pageY;
+        cursor.style.top=y+"px";
+        cursor.style.left=x+"px";
+        cursor.style.display="block";
+
+        function mouseStopped(){
+            cursor.style.display="none";
+        }
+        clearTimeout(timeout);
+        timeout=setTimeout(mouseStopped, 1000);
+    });
+    document.addEventListener("mouseout", ()=>{
+        cursor.style.display="none";
+    });
+</script>
+
+
+
+
+
+
+
+
+
+    
+    <div class="animat">
+        
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"><img  src="images.png" width="50" height="70" style="border-radius: 50%;"></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+
+    <div class="container">
+
+       <div class="particles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+        
+        <!--===== HOME =====-->
+        
+          
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shadan <br>Ahmad</span><br> Web Developer</h1>
+
+                <a href="#contact" class="button" >Contact</a>&nbsp;&nbsp;
+                <a href="RESUME1.pdf" download class="resume" >Resume<span class="pdf"></span></a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/shadan-ahmad-134268240/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                <a href="https://github.com/ShadanAhmad" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="pic2.png"/>
+                    </g>
+                    
+                </svg>
+              
+                </div>
+            
+        </section>
+        </div>
+        </div>
+    
+     <!--===== ABOUT =====-->
+     <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="pic1.jpg" alt="">
+            </div>
+            
+            <div>
+                <h2 class="about__subtitle">I'am Shadan Ahmad</h2>
+                <p class="about__text">I'm pursuing b.Tech cse from graphic era hill university dehradun and I'm a final year student. Passionate about designing & development,goal is to achieve a good position by doing hard work as well as satisfying work in it field, strongly focused to complete the task on time. Know very well that how to interact with the client & understandthe requirements as well as how to design the layout,ui while achieving customer/user friendliness. I like to learn new things.</div>                                   
+        </div>
+    </section>
+  
+ <!--===== SKILLS =====-->
+ <section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills__container bd-grid">          
+        <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">Passionate about designing & development and interested to make career in designing & development , goal is to achieve a good position by doing hard work as well as satisfying work in it field, strongly focused to complete the task on time. Know very well that how to interact with the client & understand the requirements as well as how to design the layout, ui while achieving customer/user friendliness. I like to learn new things. </p>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">95%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-css3 skills__icon'></i>
+                    <span class="skills__name">CSS3</span>
+                </div>
+                <div class="skills__bar skills__css">
+                    
+                </div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-javascript skills__icon' ></i>
+                    <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__bar skills__js">
+                    
+                </div>
+                <div>
+                    <span class="skills__percentage">65%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-paint skills__icon'></i>
+                    <span class="skills__name">UX/UI</span>
+                </div>
+                <div class="skills__bar skills__ux">
+                    
+                </div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <img src="java.png" width="30" height="30" style="border-radius: 5px;">
+                    <!-- <i class='bx bxs-java skills__icon'></i> -->
+                    &nbsp;&nbsp;&nbsp; &nbsp;<span class="skills__name">JAVA</span>
+                </div>
+                <div class="skills__bar skills__ux">
+                    
+                </div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
+            </div>
+           
+        </div>
+        
+        <div>              
+            <img src="work3.jpg" alt="" class="skills__img">
+        </div>
+    </div>
+</section>
+
+<!--===== WORK =====-->
+
+<section class="work section" id="work">
+    <h2 class="section-title">Work</h2>
+    <p style="margin-left: 205px"> I have worked as a front-end designer in pearl organisation service private limited company dehradun work from office.
+               <br>  It was two month training . During my training I learned more things & technologies and I worked on live projects . 
+                <br> I designed front - end of the website & solved problems of the clients as per the requirements.<br><br>
+                I made few projects during internship in which First one was my assignment which I had to design according to Ma'am <br>
+                In which I designed pages in the first page you will see two option  1st option is IVF & FERTILITY EXPERT, 2nd BRAIN & SPINE EXPERT<br>
+                You can explore both of them by click on explore button. Ma'am was very happy to see that so he gave me opportunity to work on live projects. <br>
+                That's why in the first live project I designed a landing page for a Taxi & Service client named Khan Taxi and Services, <br>
+                which the client liked very much, in which I added the content myself.
+                Second I designed website for coaching institute in which I designed subpages. <br>One project I designed during my studies This is a college purpose website.<br><br>
+                <span style="color: rgb(44, 44, 248);">Please check the projects by clicking on the image below.</span></p>
+
+    <div class="work__container bd-grid">
+        <a href="https://pearl-web-services.wixsite.com/abhijit-assignment" class="work__img">
+            <img src="work1.jpg" alt="">
+        </a>
+        <a href="https://pearl-web-services.wixsite.com/khan-texi-and-travel" class="work__img">
+            <img src="download (1).jpeg" alt="">
+        </a>
+        <a href="https://www.neet-jeemaincoaching.com/" class="work__img">
+            <img src="work3.jpg" alt="">
+        </a>
+        <a href="https://shadanahmad.github.io/collage-website/" class="work__img">
+            <img src="work4.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="work5.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="work6.jpg" alt="">
+        </a>
+    </div>
+</section>
+
+<!--===== CONTACT =====-->
+
+
+
+<section class="contact section" id="contact">
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+    </div>
+    <h2 class="section-title">Contact</h2>
+   
+   
+
+    <div class="contact__container bd-grid">
+        
+        <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input">
+            <input type="mail" placeholder="Email" class="contact__input">
+            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+            <input type="button" value="Submit" class="contact__button button">
+        </form>
+       
+    </div>
+   
+</section>
+</main>
+
+
+<!--===== FOOTER =====-->
+<footer class="footer">
+<p class="footer__title">Shadan Ahmad</p>
+<div class="footer__social">
+    <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+    <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+    <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+</div>
+<a href="#" class="footer__icon"><i class='bx bxl-mail' ></i></a><p class="footer__copy">shadanahmad01012001@gmai.com</p>
+</footer>
+
+
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--===== MAIN JS =====-->
+
+</div>
+<script src="main.js"></script>
+
+<script>
+    let button=document.querySelector(".resume");
+    button.addEventListener("click",()=>{
+        const span=document.querySelector(".pdf");
+       
+    })
+</script>
+
+
+
+
+</body>
+</html>
